@@ -12,13 +12,6 @@ while T != 0:
             peaks.append(0)
     peaks.append(0)
     
-    all_zeroes = [0] * n
-    # print(all_zeroes)
-    if peaks == all_zeroes:
-        T -= 1
-        print('%d %d' % (0,0))
-        continue
-
     best_l = 0
 
     current_peaks = 0
