@@ -4,19 +4,19 @@ using namespace std;
 
 void solve() {
     int n,p,c;
-    int prev_day_p=-1;
-    int prev_day_c=-1;
+    int prev_day_p=0;
+    int prev_day_c=0;
     int possible = 1;
     cin >> n;
     while(n--){
         cin >> p >> c;
-        if(prev_day_p > p){
+        if(p < prev_day_p){
             possible =0;
         }
-        else if(prev_day_c > c){
+        else if(c < prev_day_c){
             possible =0;
         }
-        else if(c > p){
+        else if(c - prev_day_c > p - prev_day_p){
             possible = 0;
         }
         prev_day_p = p;
