@@ -1,18 +1,19 @@
+#include <fstream>
 #include <iostream>
 #include <algorithm>
 #include <vector>
 #include <queue>
- 
+
 using namespace std;
- 
+
 const int Nmax = 200005;
 const int INF = 1000000000;
 const int MOD = 1000000007;
- 
+
 int a[Nmax], father[Nmax], cnt_sons[Nmax], level[Nmax], cnt_marked[Nmax];
-priority_queue<pair<int, int> > Q;
+priority_queue<pair<int, int>> Q;
 vector<int> edges[Nmax];
- 
+
 void dfs(int node, int fth) {
     father[node] = fth;
     for(int son : edges[node]) {
@@ -27,16 +28,19 @@ void dfs(int node, int fth) {
         Q.push({level[node], node});
     }
 }
- 
+
 int main()
 {
+    
     int n, k;
-    #ifndef ONLINE_JUDGE
-        freopen ("data.in","r",stdin);
-        freopen ("C.out","w",stdout);
-    #endif
+#ifndef ONLINE_JUDGE
+    freopen ("input.txt","r",stdin);
+    freopen ("output.txt","w",stdout);
+#endif
+    
     cin.sync_with_stdio( false );
     cin >> n >> k;
+
     for(int i = 0; i < n - 1; i++) {
         int x, y;
         cin >> x >> y;
