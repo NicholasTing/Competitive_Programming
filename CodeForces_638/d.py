@@ -7,12 +7,7 @@ def find_days(arr,curr_val,target):
     
     # night = grow
     new_arr = []
-    for bact in arr:
-        bact = bact / 2
-        new_arr.append(bact)
-        new_arr.append(bact)
-    
-    return arr
+     
 
 while T != 0:
     target = int(input())

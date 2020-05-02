@@ -3,25 +3,25 @@ T = int(input())
 while T != 0:
     n, k = map(int,input().split())
     numbers = list(map(int,input().split()))
-    final_ans = []
-    current_total = 0
-    current_k = 0
-    N = len(numbers)
-    curr_index = 0
-    for num in numbers:
-        if current_k < k:
-            final_ans.append(num)
-            current_total += 1
-            current_k += 1
-            
-            
+    # distinct numbers
+    dn = set(numbers)
+    dn_num = len(dn)
+    if dn_num > k:
+        print('-1')
+        T -= 1
+        continue
+    
+    else:
+        fa  = []
+        for i in dn:
+            fa.append(i)
         
+        while len(fa) < k:
+            fa.append(1)
+            
+        fa = fa * n
+        print(len(fa))
+        print(' '.join([str(e) for e in fa]))
 
-        current_index += 1
-
-        
-
-    print('final ans')
-    print(final_ans)
-
+ 
     T -= 1
