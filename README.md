@@ -1,6 +1,10 @@
 # CP - Competitive Programming
 
+## Leet Code
+## Code Forces
+
 # Including Leet Code Problems as well - 30 Day Challenge
+### I have decided to use c++ because python solutions are too slow
 
 # Code forces
 ## Link to the problems as comments in each of the code
