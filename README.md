@@ -1,7 +1,9 @@
 # CP - Competitive Programming
 
 ## Leet Code
+### https://leetcode.com/nicholasting92/
 ## Code Forces
+### https://codeforces.com/profile/NicholasTing
 
 # Including Leet Code Problems as well - 30 Day Challenge
 ### ~~I have decided to use c++ because python solutions are too slow~~
