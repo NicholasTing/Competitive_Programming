@@ -1,3 +1,4 @@
+import math
 T = int(input())
 
 while T != 0:
@@ -7,12 +8,12 @@ while T != 0:
     count = 0
     index = 0
 
-    i = 1
+    x = math.floor(k / (n-1))
+    if ((x +k) % n == 0):
+        ans = x + k -1
+    else:
+        ans = x + k
     
-    test = [i for i in range(1000000000) if i % n != 0]
-    print(test[k])
-
-
-    
+    print(ans)
 
     T -= 1
