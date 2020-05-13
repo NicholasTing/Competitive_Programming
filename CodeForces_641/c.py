@@ -69,8 +69,11 @@ fa = []
 def find_array():
     prev_seen = []
     total = 0
+    calculated_before = []
     for i in range(len(nums)-1): 
-        curr_seen = []
+        if i in calculated_before:
+            continue
+        calculated_before.append(i)
         for j in range(i+1,len(nums)):
             
             num1 = nums[i] 
@@ -80,23 +83,10 @@ def find_array():
                 pass
             else:
                 final_lcm.append(lcm)
-                curr_seen.append(lcm)
-        
-        fffa = find_gcd(curr_seen)
-        fa.append(fffa)
-        curr_seen.append(fffa)
-    
-        if prev_seen == curr_seen:
-            total += 1
-            if total > 500:
-                break
-            break
-
-        prev_seen = fffa
     
 find_array()
 # print(final_lcm)
-lcm = sorted(fa)
+lcm = sorted(final_lcm)
 
 
 # print(lcm)
