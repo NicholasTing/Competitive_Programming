@@ -11,18 +11,16 @@ while T != 0:
     else:
     
         ans = int((n-1)/2)
-        print(ans)
-        squared_in_view = (n-1)
+        init = 3
+        ans = 0
         count = 1
-        fa = 0
-        while ans != 0:
-            fa += squared_in_view ** 2 * count
+        while init <= n:
+            t = 2 * init + (2 * (init - 2))
+            ans += t * count
             count += 1
-            squared_in_view -= 1
-            # print(i)
-            ans -= 1
-        
-        print(fa)
+            init += 2
+
+        print(ans)
         
         # print(tots*8 + (n-3) * (ans-1) * 4)
             
