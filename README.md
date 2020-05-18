@@ -25,6 +25,7 @@
 6. 641 Div 2 (12-05-2020) - Ranked 7445/19117 participants
 7. 642 Div 3 (15-05-2020) - Ranked 10505/25728 participants
 8. 643 Div 2 (16-05-2020) - Ranked 7027/21742 participants
+9. Edu 87 (17-05-2020) - Ranked 1029/20309 participants (all time high score)
 
 ## Leetcode
 
