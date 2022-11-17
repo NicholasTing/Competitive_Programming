@@ -27,7 +27,7 @@ int main() {
             // different elements
             int de = 0;
 
-            for (int j = i; j < min(i+55, n); j++) {
+            for (int j = i; j < min(i+300, n); j++) {
 
                 auto count = s[j] - '0';
 
