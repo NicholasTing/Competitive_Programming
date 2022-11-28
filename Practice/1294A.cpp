@@ -29,16 +29,23 @@ int main() {
 
             if (a > target || b > target || c > target) {
                 cout << "NO\n";
-            } {
-                cout << "YES\n";
+            } else {
+                ll aNeeded = target - a;
+                ll bNeeded = target - b;
+                ll cNeeded = target - c;
+
+                if (aNeeded + bNeeded + cNeeded == n){
+                    cout << "YES\n";
+                }
+                else {
+                    cout << "NO\n";
+                }
+
             }
         }
         else{
             cout << "NO\n";
         }
-
-        cout << a << "\n";
-
     }
 
     return 0;

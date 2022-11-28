@@ -37,19 +37,12 @@ int main() {
         cin >> words;
 
         bool found = false;
-        for (ll i = 0; i < words.length(); i++) {
-            char word = words[i];
-            ll num = a[i];
-            for (ll j = 0; j < words.length(); j++){
-                if (words[i] == words[j] && num[i] != num[j]){
-                    found = true;
-                    break
-                }
-            }
-        }
+        
 
         if (not found){
             cout << "YES\n";
+        } else {
+            cout << "NO\n";
         }
 
 
